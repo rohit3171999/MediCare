@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <>
     <section className="navbar-bg">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light ">
   <div class="container">
   {/* <div class="container-fluid"> Contain Some space from both ends.... */}
     <a class="navbar-brand" href="#">MediCare</a>
@@ -44,8 +44,8 @@ const Navbar = () => {
       </ul>
       <form class="d-flex">
         
-        <button class="btn btn-outline-success" type="submit">Sign Up</button>
-        <button class="btn btn-outline-success" type="submit">Log In</button>
+        <button class="btn btn-style" type="submit">Sign Up</button>
+        <button class="btn btn-style btn-style-border" type="submit">Log In</button>
       </form>
     </div>
   </div>
