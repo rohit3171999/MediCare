@@ -29,10 +29,7 @@ const Contact = () => {
                       <div className="col-12 col-lg-6 contact-input-field">
                         <input type="text" name="" id="" className="form-control" placeholder="Last Name"/>
                       </div>
-
-
                     </div>
-
                     <div className="row">
                       <div className="col-12 col-lg-6 contact-input-field">
                         <input type="text" name="" id="" className="form-control" placeholder="Phone Number"/>
@@ -40,21 +37,17 @@ const Contact = () => {
                       <div className="col-12 col-lg-6 contact-input-field">
                         <input type="text" name="" id="" className="form-control" placeholder="Email Id"/>
                       </div>
-                      
-
                     </div>
                     <div className="row">
                       <div className="col-12 contact-input-field">
                         <input type="text" name="" id="" className="form-control" placeholder="Add Address"/>
                       </div>
                     </div>
-
                     <div className="row">
                       <div className="col-12 contact-input-field">
                         <input type="text" name="" id="" className="form-control" placeholder="Enter your message"/>
                       </div>
                     </div>
-
                     <div class="form-check form-checkbox-style">
                         <input class="form-check-input" type="checkbox" value="" 
                         id="flexCheckChecked"  />
