@@ -1,5 +1,63 @@
-import React from "react";
+import React, {useState} from "react";
 const Contact = () => {
+  const [userData, setUserData]=useState({
+    firstName:"",
+    lastnName:"",
+    phone:"",
+    email:"",
+    address:"",
+    message:"",
+  });
+  let name, value;
+  const postUserData=(event) => {
+    name=event.target.name;
+    value=event.target.value;
+    setUserData({...userData, [name]:value});
+
+  };
+
+  // connect with firebase
+  const submitData=async (event) =>{
+    event.preventDefault();
+    const{
+      firstName,
+      lastnName,
+      phone,
+      email,
+      address,
+      message}=userData;
+      
+    const res= fetch('https://medicare-7697e-default-rtdb.firebaseio.com/userDataRecord.json', {
+    method : "POST",
+    Headers:{
+      "Content-Type":"application/json"
+    },
+    body:JSON.stringify({
+      firstName,
+      lastnName,
+      phone,
+      email,
+      address,
+      message,
+
+    })
+  }
+    );
+    if(res){
+      setUserData({
+        firstName:"",
+        lastnName:"",
+        phone:"",
+        email:"",
+        address:"",
+        message:"",
+      });
+      alert("Data Stored");
+    }else{
+      alert("Please Fill The Data");
+    }
+  };
+
   return (
     <>
       <section className="contactus-section">
@@ -24,28 +82,71 @@ const Contact = () => {
                   <form method="POST">
                     <div className="row">
                       <div className="col-12 col-lg-6 contact-input-field">
-                        <input type="text" name="" id="" className="form-control" placeholder="First Name"/>
+                        <input type="text" 
+                        name="firstName" 
+                        id="" 
+                        className="form-control" 
+                        placeholder="First Name"
+                        value={userData.firstName}
+                        onChange={postUserData}  
+                        />
+                        
                       </div>
                       <div className="col-12 col-lg-6 contact-input-field">
-                        <input type="text" name="" id="" className="form-control" placeholder="Last Name"/>
+                        <input type="text" 
+                        name="lastName" 
+                        id="" 
+                        className="form-control" 
+                        placeholder="Last Name"
+                        value={userData.lastName}
+                        onChange={postUserData}
+                        />
                       </div>
                     </div>
                     <div className="row">
                       <div className="col-12 col-lg-6 contact-input-field">
-                        <input type="text" name="" id="" className="form-control" placeholder="Phone Number"/>
+                        <input type="text" 
+                        name="phone" 
+                        id="" 
+                        className="form-control" 
+                        placeholder="Phone Number"
+                        value={userData.phone}
+                        onChange={postUserData}
+                        />
                       </div>
                       <div className="col-12 col-lg-6 contact-input-field">
-                        <input type="text" name="" id="" className="form-control" placeholder="Email Id"/>
+                        <input type="text" 
+                        name="email" 
+                        id="" 
+                        className="form-control" 
+                        placeholder="Email Id"
+                        value={userData.email}
+                        onChange={postUserData}
+                        />
                       </div>
                     </div>
                     <div className="row">
                       <div className="col-12 contact-input-field">
-                        <input type="text" name="" id="" className="form-control" placeholder="Add Address"/>
+                        <input type="text" 
+                        name="address" 
+                        id="" 
+                        className="form-control" 
+                        placeholder="Add Address"
+                        value={userData.address}
+                        onChange={postUserData}
+                        />
                       </div>
                     </div>
                     <div className="row">
                       <div className="col-12 contact-input-field">
-                        <input type="text" name="" id="" className="form-control" placeholder="Enter your message"/>
+                        <input type="text" 
+                        name="message" 
+                        id="" 
+                        className="form-control" 
+                        placeholder="Enter your message"
+                        value={userData.message}
+                        onChange={postUserData}
+                        />
                       </div>
                     </div>
                     <div class="form-check form-checkbox-style">
@@ -55,7 +156,7 @@ const Contact = () => {
                               I agree that the Medicare may contact me at the email address or phone number above.
                            </label>
                     </div>
-                    <button type="submit" className="btn btn-style w-100">Submit</button>
+                    <button type="submit" className="btn btn-style w-100" onClick={submitData}>Submit</button>
                   </form>
                 </div>
               </div>
