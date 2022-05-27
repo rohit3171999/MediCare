@@ -14,7 +14,7 @@ const HowItWorks = () => {
     <section>
         <div className="work-container container">
         {/* cotainer class decides the width of container is 80%  */}
-        <h1 className="main-heading text-center">How does it works</h1>
+        <h1 className="main-heading text-center">Why Choose Medicare</h1>
         <div className="row">
         {
             workData.map((curEle) => {
@@ -22,7 +22,7 @@ const HowItWorks = () => {
                 return (
                     <>
                     <div className="col-12 col-lg-4 text-center work-container-subdiv">
-        <i class={`fontawesome-style ${logo}`}></i>
+       {/* <i class={`fontawesome-style ${logo}`}></i> */}
         {/* <i class={`sontawesome-style ${logo}`}></i> this is template string in new version in JS16 */}
         <h2 className="sub-heading">{ title}</h2>
         <p className="main-hero-para w-100">{ info}</p>

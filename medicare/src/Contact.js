@@ -10,8 +10,8 @@ const Contact = () => {
                 <div className="contact-leftside col-12 col-lg-5">
                   <h1 className="main-heading fw-bold">Contact our<br/> Medicare Team.</h1>
                   <p className="main-hero-para">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, quia quis? 
-                  Ipsa officia ad deserunt voluptate quam, nisi odio officiis tempora recusandae voluptate
+                  Depending on the care that is needed, a person staying in the hospital may interact with many different staff members every day. If health care practitioners do not introduce themselves and explain their role, 
+                  the person or family members should ask them to do so.
                   </p>
                   <figure>
                     <img src="./image/medical-team.jpg" 

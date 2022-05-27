@@ -10,12 +10,12 @@ const Header = () => {
                 A Pharmacy for all your needs <br /> Healthcare For Life.
               </h1>
               <p className="main-hero-para">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et,
-                quia quis? Ipsa officia ad deserunt voluptate quam, nisi odio
-                officiis tempora recusandae voluptate quam, nisi odio officiis
-                tempora recusandae
+              A Healthy Lifestyle Has Many Benefits Not Only For The Body But For The Mind Too. 
+              Also, If You Follow A Healthy Lifestyle Then You Can Reduce The Risk Of Having Cancer, 
+              Heart Disease, Diabetes, Obesity, And Osteoporosis. 
+              To Sum It Up, We Can Say That There Are Various Benefits Of Living A Healthy Lifestyle.
               </p>
-              <h3>Get early access for you</h3>
+              <h3>Healthcare For Life</h3>
               <div className="input-group mt-3">
                 <input
                   type="text"

@@ -8,7 +8,7 @@ const Services = () => {
       <section className="service-main-container">
         <div className="container service-container">
           <h1 className="main-heading text-center fw-bold">
-            How to send money
+            Services
           </h1>
           <div className="row">
             {serviceData.map((curElem) => {

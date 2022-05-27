@@ -8,55 +8,55 @@ const Footer = () => {
             <div className="col-12 col-lg-10 mx-auto">
               <div className="row">
                 <div className="col-6 col-lg-3">
+                  <h2>Contact Us</h2>
+                  <ul>
+                    <li>
+                    <a href="#"> <i class="fas fa-phone"></i> +91-9873753135 </a>
+                    </li>
+                    <li>
+                    <a href="#"> <i class="fas fa-envelope"></i> rohit3171999@gmail.com </a>
+                    </li>
+                    <li>
+                    <a href="#"> <i class="fas fa-envelope"></i>rohit_cs19@gla.ac.in</a>
+                    </li>
+                    <li>
+                    <a href="#"> <i class="fas fa-map-marker-alt"></i> Mathura, India-281406 </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="col-6 col-lg-3">
+                  <h2>Our Services</h2>
+                  <ul>
+                    <li>
+                      <a href="#">Dental Care</a>
+                    </li>
+                    <li>
+                      <a href="#">Diagonosis</a>
+                    </li>
+                    <li>
+                      <a href="#">Cardiology</a>
+                    </li>
+                    <li>
+                      <a href="#">amulance Service</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="col-6 col-lg-3">
                   <h2>Quick Links</h2>
                   <ul>
                     <li>
-                      <a href="#">About</a>
+                      <a href="#">Home</a>
+                    </li>
+                    <li>
+                      <a href="#">Servive</a>
                     </li>
                     <li>
                       <a href="#">About</a>
                     </li>
                     <li>
-                      <a href="#">About</a>
-                    </li>
-                    <li>
-                      <a href="#">About</a>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="col-6 col-lg-3">
-                  <h2>Support</h2>
-                  <ul>
-                    <li>
-                      <a href="#">About1</a>
-                    </li>
-                    <li>
-                      <a href="#">About2</a>
-                    </li>
-                    <li>
-                      <a href="#">About3</a>
-                    </li>
-                    <li>
-                      <a href="#">About4</a>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="col-6 col-lg-3">
-                  <h2>Services</h2>
-                  <ul>
-                    <li>
-                      <a href="#">About</a>
-                    </li>
-                    <li>
-                      <a href="#">About</a>
-                    </li>
-                    <li>
-                      <a href="#">About</a>
-                    </li>
-                    <li>
-                      <a href="#">About</a>
+                      <a href="#">Review</a>
                     </li>
                   </ul>
                 </div>

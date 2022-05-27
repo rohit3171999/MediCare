@@ -1,22 +1,23 @@
 const workapi = [
     {
       id: 1,
-      logo: "fas fa-download",
-      title: "Downlaod App",
-      info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?",
+      // logo: "FaHandHoldingMedical",
+      title: "More experience",
+      info: "The million patients we treat each year prepares us to treat the one who matters most—you.",
     },
     {
       id: 2,
-      logo: "fas fa-chalkboard-teacher",
-      title: "Complete the Instruction ",
-      info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?",
+      // logo: "fas fa-chalkboard-teacher",
+      title: "The right answers ",
+      info: "Count on our experts to deliver an accurate diagnosis and the right plan for you the first time.",
     },
     {
-      id: 3,
-      logo: "fas fa-donate",
-      title: "Receive your funds",
-      info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?",
+    id: 3,
+      // logo: "fas fa-chalkboard-teacher",
+      title: "Innovation with impact",
+      info: "All of our patient care, education and research are driven to make discoveries that can help heal you.",
     },
+    
     
   ];
   

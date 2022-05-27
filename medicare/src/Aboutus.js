@@ -16,7 +16,7 @@ const Aboutus = () => {
           {/* 1 section right side image */}
           <div className="col-12 col-lg-7 our-services-list">
               <h3 className="mini-title">-- AVAILABLE @ GOOGLE AND IOS APP STORE ONLY</h3>
-              <h1 className="main-heading">How to use the App?</h1>
+              <h1 className="main-heading">About the Medicare?</h1>
               {/* using map funtion for loop */}
               {aboutData.map((curElem)  => {
                   const {id, title, info}=curElem;
