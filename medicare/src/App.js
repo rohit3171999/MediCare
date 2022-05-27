@@ -1,22 +1,24 @@
 import React from "react";
-import Navbar from "./navbar";
-import Header from "./Header";
-import HowItWorks from "./HowItWorks";
-import Aboutus from "./Aboutus.js";
-import Services from "./Services";
-import Contact from "./Contact";
-import Footer from "./Footer";
+import Home from "./Home";
+import { Route, Routes } from "react-router-dom";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Error from "./pages/Error";
+import Service from "./pages/Service";
+
 const App = () => {
   return (
     <>
-     <Navbar />
-{/* How to call navbar in App.Js */}
-     <Header />
-     <HowItWorks />
-     <Aboutus />
-     <Services />
-     <Contact />
-     <Footer />
+    <Routes>
+    <Route exact path="/" element={<Home />}></Route>
+    <Route path="/contact" element={<Contact />}></Route>
+    <Route path="/about" element={<About />}></Route>
+    <Route path="/error" element={<Error />}></Route>
+    <Route path="/service" element={<Service />}></Route>
+
+    
+     
+     </Routes>
     </>
   );
 };
