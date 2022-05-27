@@ -1,10 +1,13 @@
 import React from "react";
+import Navbar from "../navbar";
+import Aboutus from "../Aboutus";
+import Footer from "../Footer";
 const About = () => {
   return (
     <>
-      <div>
-          <h1>About</h1>
-      </div>
+      <Navbar />
+     <Aboutus />    
+     <Footer />
     </>
   );
 };
